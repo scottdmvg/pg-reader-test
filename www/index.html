@@ -45,12 +45,14 @@
 			 <a href="#" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')">Wikipedia (inAppBrowser)</a><br /><br />
         </div>
 
-        <script type="text/javascript" src="phonegap.js"></script>
+      
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
 			
-				
+					window.onerror = function(a,b,c) {
+				    alert(a + "; " + b + "; " + c);
+				  }
 				
 			console.log(localStorage.name);
         </script>

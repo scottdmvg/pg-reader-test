@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Pocket Joe</title>
+  <title>Innovation Daily</title>
   <!-- jQuery CDN -->
  	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	
@@ -66,6 +66,7 @@ function browserLink(link){
 		margin:10px 0;
 	}
 </style>
-<div style="width:100%;height:100px;position:fixed;bottom:0;left:0;background-color:yellow;"><h2 style="text-align:center;margin:5px 0 0 0;"><button onclick="window.plugins.socialsharing.share(null, null, null, 'http://www.x-services.nl')">link only</button><a href="index.html">Home</a></h2></div>
+<div style="width:100%;height:100px;position:fixed;bottom:0;left:0;background-color:yellow;"><h2 style="text-align:center;margin:5px 0 0 0;"><button onclick="window.plugins.socialsharing.shareVia('com.apple.social.facebook', 'Message via FB', null, null, null, function(){console.log('share ok')}, function(msg) {alert('error: ' + msg)})">message via Facebook</button>
+<a href="index.html">Home</a></h2></div>
 </body>
 </html>
